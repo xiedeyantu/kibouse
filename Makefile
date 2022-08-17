@@ -1,8 +1,4 @@
 GOFMT=gofmt
-ALL_SRC:=$(shell find . -name "*.go" | \
-	grep -v \
-		-e vendor \
-	)
 
 .PHONY: build
 build: dep ## Build the binary
